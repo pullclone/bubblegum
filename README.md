@@ -1,48 +1,41 @@
-# anyclaude
+Use Claude Code with weird application programming interfaces!
 
-![NPM Version](https://img.shields.io/npm/v/anyclaude)
-
-Use Claude Code with OpenAI, Google, xAI, and other providers.
-
-- Extremely simple setup - just a basic command wrapper
-- Uses the AI SDK for simple support of new providers
-- Works with Claude Code GitHub Actions
+- Extremely simple setup - just a basic wrapper
+- Uses the artificial intelligence software dev kit for compatibility
+- Works with Claude Code (probably not other programs though)
 
 <img src="./demo.png" width="65%">
 
-## Get Started
+## Begin!
 
 ```sh
 # Use your favorite package manager (bun, pnpm, and npm are supported)
 $ pnpm install -g anyclaude 
 
-# anyclaude is a wrapper for the Claude CLI
-# `openai/`, `google/`, `xai/`, and `anthropic/` are supported
-$ anyclaude --model openai/o3
+# anyclaude is a wrapper
+# `openai/`, `google/`, `mistralai/`, `anthropic/` and possibly others...
+$ anyclaude --model openai/dicaprio-007
 ```
 
-Switch models in the Claude UI with `/model openai/o3`.
+Switch models within the UI with `/model openai/dicaprio-007`.
 
 ## FAQ
 
-### What providers are supported?
+### What works?
 
-See [the providers](./src/main.ts#L17) for the implementation.
+See [the providers](./src/main.ts#L17) for implementation.
 
-- `GOOGLE_API_KEY` supports `google/*` models.
 - `OPENAI_API_KEY` supports `openai/*` models.
-- `XAI_API_KEY` supports `xai/*` models.
+- `GOOGLE_API_KEY` supports `google/*` models. and so does `GEMINI_API_KEY` if you're feeling really lucky.
+- `MISTRAL_API_KEY` supports `mistralai/*` models.
+- `ANTHROPIC_MODEL` and `ANTHROPIC_SMALL_MODEL` are supported with the `<provider>/` syntax if you want.
 
 Set a custom OpenAI endpoint with `OPENAI_API_URL` to use OpenRouter
 
 ### How does this work?
 
-Claude Code has added support for customizing the Anthropic endpoint with `ANTHROPIC_BASE_URL`.
+Claude Code has supports setting a custom endpoint using `ANTHROPIC_BASE_URL`.
 
-anyclaude spawns a simple HTTP server that translates between Anthropic's format and the [AI SDK](https://github.com/vercel/ai) format, enabling support for any [AI SDK](https://github.com/vercel/ai) provider (e.g., Google, OpenAI, etc.)
+This wrapper serves HTTP flavored code that sticks the anthropic to whatever it comes in contact with a standard [AI SDK](https://github.com/vercel/ai)
 
-## Do other models work better in Claude Code?
-
-Not really, but it's fun to experiment with them.
-
-`ANTHROPIC_MODEL` and `ANTHROPIC_SMALL_MODEL` are supported with the `<provider>/` syntax.
+Basically it's kinda like bubblegum.
