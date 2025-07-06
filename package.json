@@ -1,5 +1,5 @@
 {
-  "name": "anyclaude",
+  "name": "bubblegum",
   "version": "1.0.5",
   "author": {
     "name": "coder",
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coder/anyclaude"
+    "url": "https://github.com/coder/bubblegum"
   },
   "bin": {
-    "anyclaude": "./dist/main.js"
+    "bubblegum": "./dist/main.js"
   },
   "devDependencies": {
     "@ai-sdk/anthropic": "^1.2.12",
