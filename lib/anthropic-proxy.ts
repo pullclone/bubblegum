@@ -2,15 +2,15 @@ import type { ProviderV1 } from "@ai-sdk/provider";
 import { jsonSchema, streamText, type Tool } from "ai";
 import * as http from "http";
 import * as https from "https";
-import type { AnthropicMessagesRequest } from "./anthropic-api-types";
-import { mapAnthropicStopReason } from "./anthropic-api-types";
+import type { AnthropicMessagesRequest } from "../src/anthropic-api-types";
+import { mapAnthropicStopReason } from "../src/anthropic-api-types";
 import {
   convertFromAnthropicMessages,
   convertToAnthropicMessagesPrompt,
-} from "./convert-anthropic-messages";
-import { convertToAnthropicStream } from "./convert-to-anthropic-stream";
-import { convertToLanguageModelMessage } from "./convert-to-language-model-prompt";
-import { providerizeSchema } from "./json-schema";
+} from "../src/convert-anthropic-messages";
+import { convertToAnthropicStream } from "../src/convert-to-anthropic-stream";
+import { convertToLanguageModelMessage } from "../src/convert-to-language-model-prompt";
+import { providerizeSchema } from "../src/json-schema";
 
 export type CreateAnthropicProxyOptions = {
   providers: Record<string, ProviderV1>;
