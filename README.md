@@ -1,57 +1,101 @@
-🫧 Bubblegum
+# 🫧 **Bubblegum**
 
-Lightweight. Reliable. Always ready.
+_Lightweight. Reliable. Always ready._
 
-    “A faithful sidearm for your terminal. Chambered in clean prompts. Wrapped for rapid draw.”
+> _“A faithful sidearm for your terminal. Chambered in clean prompts. Wrapped for rapid draw.”_
 
-📦 Overview
+* * *
 
-Bubblegum is a personal wrapper around AnyClaude — retooled, restyled, and re-racked for local use. It’s a terminal-native LLM loader and prompt router with hand-selected integrations, clean output, and no extra noise. Built to be sharp, fast, and familiar — like a well-oiled .45.
+## 📦 Overview
 
-    ✅ OpenAI: API-ready, sits up top
+**Bubblegum** is a personal wrapper around [AnyClaude](https://github.com/anysphere/anyclaude) — retooled, restyled, and re-racked for local use. It’s a terminal-native LLM loader and prompt router with hand-selected integrations, clean output, and no extra noise. Built to be sharp, fast, and familiar — like a well-oiled .45.
 
-    ✅ Claude: Anthropic via CLAUDE_API_KEY
+- ✅ **OpenAI**: API-ready, sits up top
+- ✅ **Claude**: Anthropic via `CLAUDE_API_KEY`
+- ✅ **Gemini**: Google's models via `GEMINI_API_KEY`
+- ✅ **Mistral**: Frontier open-weight models
+- ✅ **OpenRouter**: Unified endpoint, fallback-ready
 
-    ✅ Gemini: Google's models via GEMINI_API_KEY
-
-    ✅ Mistral: Frontier open-weight models
-
-    ✅ OpenRouter: Unified endpoint, fallback-ready
-
-🗃️ xAI removed. The bench has been cleaned, the slide filed smooth — no further notes necessary.
+🗃️ **xAI removed.** The bench has been cleaned, the slide filed smooth — no further notes necessary.
 
 <img src="./demo.png" width="65%">
 
-## Begin!
+* * *
 
-```sh
-# Use your favorite package manager (bun, pnpm, and npm are supported)
-$ pnpm install -g anyclaude 
+## 🔩 Installation
 
-# bubblegum is a wrapper
-# `openai/`, `google/`, `mistralai/`, `anthropic/` and possibly others...
-$ anyclaude --model openai/dicaprio-007
+```bash
+npm install -g git+https://github.com/yourname/bubblegum.git
 ```
 
-Switch models within the UI with `/model openai/dicaprio-007`.
+Or clone for local development:
 
-## FAQ
+```bash
+git clone https://github.com/yourname/bubblegum.git
+cd bubblegum
+npm install
+```
 
-### What works?
+* * *
 
-See [the providers](./src/main.ts#L17) for implementation.
+## 🛠️ Usage
 
-- `OPENAI_API_KEY` supports `openai/*` models.
-- `GOOGLE_API_KEY` supports `google/*` models. and so does `GEMINI_API_KEY` if you're feeling really lucky.
-- `MISTRAL_API_KEY` supports `mistralai/*` models.
-- `ANTHROPIC_MODEL` and `ANTHROPIC_SMALL_MODEL` are supported with the `<provider>/` syntax if you want.
+```bash
+bubblegum "Write me a sonnet about carbon steel"
+```
 
-Set a custom OpenAI endpoint with `OPENAI_API_URL` to use OpenRouter
+Optional flags:
 
-### How does this work?
+```
+--model <model_name>        Specify provider/model
+--json                      Output raw JSON
+--stream                    Enable streaming mode
+```
 
-Claude Code has supports setting a custom endpoint using `ANTHROPIC_BASE_URL`.
+* * *
 
-This wrapper serves HTTP flavored code that sticks the anthropic to whatever it comes in contact with a standard [AI SDK](https://github.com/vercel/ai)
+## 💡 Philosophy
 
-Basically it's kinda like bubblegum.
+**Bubblegum** was built for the terminal gunfighter — clean loadout, high reliability, minimal distractions. It’s a fast-access mental sidearm for querying local or remote LLMs, tuned for clarity, speed, and presence.
+
+> “You don’t need every bell and whistle. Just what works. And works _every time_.”
+
+* * *
+
+Absolutely — here's that footnote, refit to match the **Bubblegum** style and tone from the README:
+
+* * *
+
+## 🔐 API Keys & Endpoints
+
+Just load your mags — Bubblegum knows what to do.
+
+| 🔧 Env Var | 🔗 Powers Up | Notes |
+| --- | --- | --- |
+| `OPENAI_API_KEY` | `openai/*` | Works with GPT-4, GPT-3.5, etc. |
+| `GOOGLE_API_KEY` | `google/*` | Works great — if you're feeling lucky. |
+| `GEMINI_API_KEY` | `google/*` | Yes, really. Just in case the stars align. |
+| `MISTRAL_API_KEY` | `mistralai/*` | Slim, mean, open-weight machines. |
+| `ANTHROPIC_MODEL` | `anthropic/claude-*` | For named Claude models, don't quote me on that. |
+| `ANTHROPIC_SMALL_MODEL` | (Optional backup) | For lightweight Claude fallback. |
+| `OPENAI_API_URL` | _Custom OpenAI endpoint_ | Use this to hit OpenRouter. |
+| `ANTHROPIC_BASE_URL` | _Custom Claude endpoint_ | Sticks Anthropic to whatever it touches. |
+
+🧠 Bubblegum wraps around [Vercel’s AI SDK](https://github.com/vercel/ai), which dispatches requests like a smart courier — formatting payloads to match each provider’s quirks and quirksome quirks.
+
+> _Think of it as HTTP-flavor — and Bubblegum is has the wrap._
+
+## 📄 License & Lineage
+
+MIT Licensed. Forked from the excellent [AnyClaude](https://github.com/coder/anyclaude). This repo exists as a private sidearm — tweaked and trimmed for personal use. All credit to upstream for the original engineering.
+
+* * *
+
+## 🫧 Credits
+
+- Terminal aesthetics inspired by bubblegum wrappers, neon HUDs, and the satisfying thunk of steel-on-steel.
+- 1911-A1 philosophy baked in: timeless form, reliable action, no unnecessary parts.
+
+* * *
+
+<br>
