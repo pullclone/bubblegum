@@ -1,8 +1,24 @@
-Use Claude Code with weird application programming interfaces!
+🫧 Bubblegum
 
-- Extremely simple setup - just a basic wrapper
-- Uses the artificial intelligence software dev kit for compatibility
-- Works with Claude Code (probably not other programs though)
+Lightweight. Reliable. Always ready.
+
+    “A faithful sidearm for your terminal. Chambered in clean prompts. Wrapped for rapid draw.”
+
+📦 Overview
+
+Bubblegum is a personal wrapper around AnyClaude — retooled, restyled, and re-racked for local use. It’s a terminal-native LLM loader and prompt router with hand-selected integrations, clean output, and no extra noise. Built to be sharp, fast, and familiar — like a well-oiled .45.
+
+    ✅ OpenAI: API-ready, sits up top
+
+    ✅ Claude: Anthropic via CLAUDE_API_KEY
+
+    ✅ Gemini: Google's models via GEMINI_API_KEY
+
+    ✅ Mistral: Frontier open-weight models
+
+    ✅ OpenRouter: Unified endpoint, fallback-ready
+
+🗃️ xAI removed. The bench has been cleaned, the slide filed smooth — no further notes necessary.
 
 <img src="./demo.png" width="65%">
 
@@ -12,7 +28,7 @@ Use Claude Code with weird application programming interfaces!
 # Use your favorite package manager (bun, pnpm, and npm are supported)
 $ pnpm install -g anyclaude 
 
-# anyclaude is a wrapper
+# bubblegum is a wrapper
 # `openai/`, `google/`, `mistralai/`, `anthropic/` and possibly others...
 $ anyclaude --model openai/dicaprio-007
 ```
